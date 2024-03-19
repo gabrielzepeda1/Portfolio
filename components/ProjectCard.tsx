@@ -1,7 +1,7 @@
 "use client";
 
 import React, { use, useRef } from "react";
-import SectionHeader from "./SectionHeader";
+import SectionHeader from "./SectionHeading";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { useScroll, useTransform, motion } from "framer-motion";
@@ -39,7 +39,7 @@ const ProjectCard = ({
         <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
           {tags.map((tag, index) => (
             <li
-              className="bg-black/0.7 px-3 py-1 text-[0.7rem] uppercase  tracking-wider text-white rounded-full"
+              className="bg-black px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
               key={index}
             >
               {tag}
